@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table demo</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js">
+    </script>
+</head>
+  
+<body>
+    <center>
+        <div data-role="page">
+            <h1 style="color:#a36071;">
+                College Website
+            </h1>
+            <h3>SKN Language Learning</h3>
+            <div data-role="header" id="SKN1">
+                <div role="main" class="ui-content">
+                    
+                    <label for="SKN" class="select"> 
+                        SKNLearn Courses: 
+                    </label> 
+                    <select id="SKN2"> 
+                <option value="C">C Programming</option> 
+                <option value="CPP">C++ Programming</option> 
+                <option value="JAVA">Java Programming</option> 
+                <option value="overnight">Python Programming</option> 
+                <option value="WEB">Web Development</option> 
+                <option value="Devops">Devops</option>
+                <option value="ML">Machine Learning</option>
+                <option value="DSA">Data Structures Algorithum </option>  
+                <option value="AI">Artificial Intelligent</option>
+                <option value="JS">JavaScript</option> 
+                    </select>
+                <button id="button">Click !</button> 
+                </div>
+            </div>
+        </div>
+    </center>
+    <script>
+        $(document).ready(function () {
+            $("#SKN").option({
+                classes: {
+                    "classes.Name": "SKNLearn"
+                }
+            });
+            $("#SKN").option("option", "classes.Name", "SKNLearn");
+            $("#button").onclick(function()
+            {  
+                $("#SKN2").alert("Are You Confirm ?");
+
+        });
+            });
+        
+    </script>
+</body>
+  
+</html>
